@@ -1,0 +1,27 @@
+header,footer{
+    background-color: rgb(236, 245, 116);
+    height: 20vh;
+    text-align: center;
+}
+#main{
+    display: flex;
+}
+#main article{
+    flex: 1;
+    text-align: center;
+}
+nav{
+    background-color:pink;
+    width: 15vw;
+    position: absolute;
+    text-align: center;
+    height: 90vh;
+    top: 9px;
+    left: 0px;
+}
+#main aside{
+    background-color: rgb(7, 225, 236);
+    text-align: center;
+    width: 17vw;
+    height: 50vh;
+}
