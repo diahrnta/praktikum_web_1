@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs</title>
+</head>
+<body>
+    <h1>Perubahan Kurs Dollar ke Rupiah</h1>
+<br>
+<br>
+    <h2>Kurs AS</h2>
+    <label for="">Dollar Amerika Serikat :</label>
+    <input type="number" name="dolaramerika" id="dolaramerika" onchange="HitungDolarAmerika()">
+    <p>Konversi Kurs Dollar ke Rupiah :Rp.  <span id="rupiah_1"></span></p>
+    <button onclick="check()">check</button>
+
+    <h2>Kurs SGD</h2>
+    <label for="">Dollar Singapura :</label>
+    <input type="number" name="dolareropa" id="dolareropa" onchange="HitungDolarSingapura()">
+    <p>Konversi Kurs Dollar ke Rupiah :Rp.  <span id="rupiah_2"></span></p>
+    <button onclick="check()">check</button>
+
+    <h2>Kurs AUD</h2>
+    <label for="">Dollar Australia :</label>
+    <input type="number" name="dolarsingapura" id="dolarsingapura" onchange="HitungDolarAustralia()">
+    <p>Konversi Kurs Dollar ke Rupiah :Rp.  <span id="rupiah_3"></span></p>
+    <button onclick="check()">check</button>
+
+
+    <script>
+        function HitungDolarAmerika() {
+            let jumlahdolarus = document.getElementById("dolaramerika").value;
+            let jumlahrupiah = 15486 * jumlahdolarus;
+            document.getElementById("rupiah_1").innerText=jumlahrupiah;  
+        }
+
+        function HitungDolarSingapura() {
+            let jumlahdolarerp = document.getElementById("dolareropa").value;
+            let jumlahrupiah = 11648 * jumlahdolarerp;
+            document.getElementById("rupiah_2").innerText=jumlahrupiah;  
+        }
+
+        function HitungDolarAustralia() {
+            let jumlahdolarsgd = document.getElementById("dolarsingapura").value;
+            let jumlahrupiah = 10470 * jumlahdolarsgd;
+            document.getElementById("rupiah_3").innerText=jumlahrupiah;  
+        }
+    </script>
+</body>
+</html>
