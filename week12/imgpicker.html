@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img Picker</title>
+</head>
+<body>
+    <label for="gambar">orang korea :</label>
+    <select id="gambar" onchange="image()">
+        <option id="img1">blackpink</option>
+        <option id="img2">jennie</option>
+        <option id="img3">jisoo</option>
+        <option id="img4">lisa</option>
+        <option id="img5">rose</option>
+        <option id="img6">blackpink</option>
+    </select>
+    <br />
+
+    <img id="gambarpilih" width="400" style="margin-top: 20px;"/>
+
+    <script>
+        function image() {
+            let pilih = document.getElementById("gambar").value;
+            let gambarpilih = document.getElementById("gambarpilih");
+    
+            if (pilih == "blackpink") {
+                gambarpilih.src = "images/blackpink.jpg";
+                alert("foto pertama");
+            } else if (pilih == "jennie") {
+                gambarpilih.src = "images/Jennie.jpg";
+                alert("foto kedua");
+            } else if (pilih == "jisoo") {
+                gambarpilih.src = "images/Jisoo.jpg";
+                alert("foto ketiga");
+            } else if (pilih == "lisa") {
+                gambarpilih.src = "images/Lisa.jpg";
+                alert("foto keempat");
+            } else if (pilih == "rose") {
+                gambarpilih.src = "images/Rose.jpg";
+                alert("foto kelima");
+            } else if (pilih == "blackpink") {
+                gambarpilih.src = "images/blackpink.jpg";
+                alert("foto keenam");
+            } 
+        }
+    </script>
+</body>
+</html>
